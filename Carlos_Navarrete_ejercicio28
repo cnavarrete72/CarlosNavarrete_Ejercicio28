@@ -1,0 +1,12 @@
+#!/bin/bash
+#PBS -l nodes=1:ppn=1, mem=1gb,walltime=00:05:00
+#PBS -M cf.navarrete969@uniandes.edu.co
+#PBS -m abe
+#PBS -N CarlosNavarrete_Ejercicio28
+
+cd /hpcfs/home/fisi4028/cf.navarrete969/CarlosNavarrete_Ejercicio28/
+
+module load mpich/3.2.1
+
+make clean
+make output1
